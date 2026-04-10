@@ -33,7 +33,6 @@
     -webkit-font-smoothing: antialiased;
   }
 
-  /* HEADER */
   header {
     max-width: 900px;
     margin: 0 auto;
@@ -55,13 +54,8 @@
     letter-spacing: -2px;
   }
 
-  .initials span {
-    color: var(--accent);
-  }
-
-  .header-meta {
-    text-align: right;
-  }
+  .initials span { color: var(--accent); }
+  .header-meta { text-align: right; }
 
   .title-line {
     font-size: 13px;
@@ -85,10 +79,8 @@
   }
 
   .linkedin-link:hover { border-bottom-color: var(--accent); }
-
   .linkedin-link svg { width: 14px; height: 14px; }
 
-  /* INTRO */
   .intro {
     max-width: 900px;
     margin: 0 auto;
@@ -107,7 +99,6 @@
     font-style: italic;
   }
 
-  /* NAV PILLS */
   .nav-strip {
     max-width: 900px;
     margin: 0 auto;
@@ -140,7 +131,6 @@
     border-color: var(--accent);
   }
 
-  /* CASE STUDY */
   .case-study {
     max-width: 900px;
     margin: 0 auto;
@@ -190,10 +180,7 @@
     margin-bottom: 36px;
   }
 
-  .cs-metric {
-    background: var(--paper);
-    padding: 20px 20px;
-  }
+  .cs-metric { background: var(--paper); padding: 20px; }
 
   .cs-metric-val {
     font-family: var(--serif);
@@ -203,25 +190,10 @@
     margin-bottom: 4px;
   }
 
-  .cs-metric-label {
-    font-size: 12px;
-    color: var(--ink-light);
-    line-height: 1.4;
-  }
+  .cs-metric-label { font-size: 12px; color: var(--ink-light); line-height: 1.4; }
+  .cs-metric-sub { font-size: 11px; color: var(--ink-light); opacity: 0.7; margin-top: 3px; }
 
-  .cs-metric-sub {
-    font-size: 11px;
-    color: var(--ink-light);
-    opacity: 0.7;
-    margin-top: 3px;
-  }
-
-  .cs-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    margin-bottom: 32px;
-  }
+  .cs-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 32px; }
 
   .cs-tag {
     font-size: 11px;
@@ -234,10 +206,7 @@
     letter-spacing: 0.03em;
   }
 
-  .cs-body {
-    display: grid;
-    gap: 0;
-  }
+  .cs-body { display: grid; gap: 0; }
 
   .cs-section {
     display: grid;
@@ -256,11 +225,7 @@
     padding-top: 3px;
   }
 
-  .cs-section-text {
-    font-size: 15px;
-    color: var(--ink-mid);
-    line-height: 1.75;
-  }
+  .cs-section-text { font-size: 15px; color: var(--ink-mid); line-height: 1.75; }
 
   .cs-highlight {
     background: var(--accent-light);
@@ -270,18 +235,9 @@
     margin: 8px 0;
   }
 
-  .cs-highlight p {
-    font-size: 15px;
-    color: var(--accent);
-    line-height: 1.7;
-  }
+  .cs-highlight p { font-size: 15px; color: var(--accent); line-height: 1.7; }
 
-  .cs-phases {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-    margin: 8px 0;
-  }
+  .cs-phases { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 8px 0; }
 
   .cs-phase {
     background: var(--paper-warm);
@@ -299,18 +255,8 @@
     margin-bottom: 4px;
   }
 
-  .cs-phase-title {
-    font-size: 14px;
-    font-weight: 500;
-    color: var(--ink);
-    margin-bottom: 6px;
-  }
-
-  .cs-phase-body {
-    font-size: 13px;
-    color: var(--ink-mid);
-    line-height: 1.6;
-  }
+  .cs-phase-title { font-size: 14px; font-weight: 500; color: var(--ink); margin-bottom: 6px; }
+  .cs-phase-body { font-size: 13px; color: var(--ink-mid); line-height: 1.6; }
 
   .cs-callout {
     background: var(--paper-warm);
@@ -320,14 +266,8 @@
     margin: 8px 0;
   }
 
-  .cs-callout p {
-    font-size: 13px;
-    color: var(--ink-light);
-    line-height: 1.6;
-    font-style: italic;
-  }
+  .cs-callout p { font-size: 13px; color: var(--ink-light); line-height: 1.6; font-style: italic; }
 
-  /* FOOTER */
   footer {
     max-width: 900px;
     margin: 0 auto;
@@ -339,11 +279,7 @@
     animation: fadeUp 0.8s ease 0.7s forwards;
   }
 
-  .footer-name {
-    font-family: var(--serif);
-    font-size: 20px;
-    color: var(--ink);
-  }
+  .footer-name { font-family: var(--serif); font-size: 20px; color: var(--ink); }
 
   .footer-link {
     font-size: 13px;
@@ -356,7 +292,6 @@
 
   .footer-link:hover { border-bottom-color: var(--accent); }
 
-  /* EDIT NOTICE */
   .edit-notice {
     background: var(--ink);
     color: var(--paper);
@@ -391,15 +326,11 @@
 </head>
 <body>
 
-<div class="edit-notice">
-  To edit this site: open this file in any text editor and search for the section you want to update. Each case study is clearly labeled with a comment like <code>&lt;!-- CASE STUDY 1 --&gt;</code>
-</div>
-
-<!-- HEADER — edit name initials and title below -->
+<!-- HEADER -->
 <header>
   <div class="initials">J<span>.</span>T<span>.</span></div>
   <div class="header-meta">
-    <div class="title-line">Senior Program Manager&nbsp;&nbsp;|&nbsp;&nbsp;Strategic Product Manager</div>
+    <div class="title-line">Senior Program Manager &nbsp;|&nbsp; Strategic Product Manager</div>
     <a href="https://www.linkedin.com/in/jamestandpt/" target="_blank" class="linkedin-link">
       <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
       linkedin.com/in/jamestandpt
@@ -407,34 +338,34 @@
   </div>
 </header>
 
-<!-- INTRO — edit the tagline sentence below -->
+<!-- INTRO -->
 <section class="intro">
-  <p>Program and product leader specializing in healthcare benefits — driving product commercialization, operational infrastructure, and member experience from concept through scale.</p>
+  <p>Program and product leader specializing in healthcare benefits, driving product commercialization, operational infrastructure, and member experience from concept through scale.</p>
 </section>
 
 <!-- NAV -->
 <nav class="nav-strip">
-  <a href="#cs1" class="nav-pill">Specialty Pharmacy</a>
-  <a href="#cs2" class="nav-pill">Fee Allocation Recovery</a>
+  <a href="#cs1" class="nav-pill">Revenue Impact</a>
+  <a href="#cs2" class="nav-pill">Revenue Recovery</a>
   <a href="#cs3" class="nav-pill">Member Activation</a>
-  <a href="#cs4" class="nav-pill">Provider Scheduling</a>
+  <a href="#cs4" class="nav-pill">Cross-Functional Delivery</a>
 </nav>
 
 <!-- ============================================================ -->
-<!-- CASE STUDY 1 — edit all text between the opening and closing tags -->
+<!-- CASE STUDY 1 -->
 <!-- ============================================================ -->
 <section class="case-study" id="cs1">
   <div class="cs-eyebrow">Case study 01 &mdash; Revenue impact</div>
-  <h2 class="cs-title">Specialty pharmacy competitive bidding product</h2>
-  <p class="cs-subtitle">Product commercialization — enrollment, implementation, and operational ownership — healthcare / pharmacy benefits</p>
+  <h2 class="cs-title">New Product Launch: Specialty Pharmacy End to End</h2>
+  <p class="cs-subtitle">Product commercialization, enrollment, implementation, and operational ownership — healthcare / pharmacy benefits</p>
 
   <div class="cs-metrics">
     <div class="cs-metric">
       <div class="cs-metric-val">$500K+</div>
-      <div class="cs-metric-label">Revenue by end of year 1</div>
+      <div class="cs-metric-label">Revenue on track by end of year 1</div>
     </div>
     <div class="cs-metric">
-      <div class="cs-metric-val">12&ndash;18 mo</div>
+      <div class="cs-metric-val">12 to 18 mo</div>
       <div class="cs-metric-label">Concept to market</div>
     </div>
     <div class="cs-metric">
@@ -445,7 +376,7 @@
 
   <div class="cs-tags">
     <span class="cs-tag">Product commercialization</span>
-    <span class="cs-tag">Enrollment &amp; implementation</span>
+    <span class="cs-tag">Enrollment and implementation</span>
     <span class="cs-tag">Vendor operations</span>
     <span class="cs-tag">Cross-functional alignment</span>
     <span class="cs-tag">Talent development</span>
@@ -454,7 +385,7 @@
   <div class="cs-body">
     <div class="cs-section">
       <div class="cs-section-label">Context</div>
-      <div class="cs-section-text">Specialty drugs represent a small share of total pharmacy utilization but carry significantly higher costs per claim. The organization identified an opportunity to commercialize a specialty pharmacy competitive bidding capability — owned and operated by our PBM partner — as a standalone product offering. By packaging this capability with the right enrollment, implementation, and operational infrastructure, the health plan could bring a differentiated product to market that helped members access the lowest available specialty drug price while generating a new fee-based revenue stream.</div>
+      <div class="cs-section-text">Specialty drugs represent a small share of total pharmacy utilization but carry significantly higher costs per claim. The organization identified an opportunity to commercialize a specialty pharmacy competitive bidding capability, owned and operated by our PBM partner, as a standalone product offering. By packaging this capability with the right enrollment, implementation, and operational infrastructure, the health plan could bring a differentiated product to market that helped members access the lowest available specialty drug price while generating a new fee-based revenue stream.</div>
     </div>
     <div class="cs-section">
       <div class="cs-section-label">Problem</div>
@@ -466,31 +397,31 @@
     </div>
     <div class="cs-section">
       <div class="cs-section-label">Approach</div>
-      <div class="cs-section-text">I led product definition by translating the PBM's bidding capability into a clearly scoped benefit that sales teams could confidently position and implement. I designed enrollment and implementation workflows that enabled consistent, accurate setup across commercial accounts. Working with legal, compliance, clinical, and technology stakeholders, I ensured the product met regulatory requirements and integrated cleanly with existing systems. I also established audit processes to verify enrollment accuracy and confirm that fees were properly flowing to the pharmacy book of business — a critical control given the fee-based revenue model.</div>
+      <div class="cs-section-text">I led product definition by translating the PBM's bidding capability into a clearly scoped benefit that sales teams could confidently position and implement. I designed enrollment and implementation workflows that enabled consistent, accurate setup across commercial accounts. Working with legal, compliance, clinical, and technology stakeholders, I ensured the product met regulatory requirements and integrated cleanly with existing systems. I also established audit processes to verify enrollment accuracy and confirm that fees were properly flowing to the pharmacy book of business, a critical control given the fee-based revenue model.</div>
     </div>
     <div class="cs-section">
       <div class="cs-section-label">Obstacles</div>
-      <div class="cs-section-text">The program required managing complexity across all major dimensions simultaneously — regulatory and compliance requirements, competing priorities across commercial and clinical stakeholders, technical integration challenges, and ongoing timeline pressure. A key challenge was maintaining clarity about the boundary between what the PBM owned and what the health plan needed to build, ensuring the right work happened on the right side without duplicating effort or creating gaps.</div>
+      <div class="cs-section-text">The program required managing complexity across all major dimensions simultaneously, including regulatory and compliance requirements, competing priorities across commercial and clinical stakeholders, technical integration challenges, and ongoing timeline pressure. A key challenge was maintaining clarity about the boundary between what the PBM owned and what the health plan needed to build, ensuring the right work happened on the right side without duplicating effort or creating gaps.</div>
     </div>
     <div class="cs-section">
       <div class="cs-section-label">Outcome</div>
       <div class="cs-section-text">
-        <div class="cs-highlight"><p>The product reached $500K in revenue by end of year 1, with members benefiting from access to competitive specialty drug pricing through the PBM bidding process. The program is actively expanding to additional lines of business, extending the revenue opportunity beyond the initial launch market.</p></div>
+        <div class="cs-highlight"><p>The product is on track to exceed $500K in revenue by end of year 1, with new groups continuing to enroll throughout the year. Members are benefiting from access to competitive specialty drug pricing through the PBM bidding process. The program is actively expanding to additional lines of business, further extending the revenue opportunity beyond the initial launch market.</p></div>
       </div>
     </div>
     <div class="cs-section">
       <div class="cs-section-label">Reflection</div>
-      <div class="cs-section-text">I would establish a more explicit operating model with the PBM earlier in the program — defining ownership boundaries, escalation paths, and data-sharing expectations before enrollment began. This would have reduced ambiguity during operational standup and made the audit process more efficient from the start.</div>
+      <div class="cs-section-text">I would establish a more explicit operating model with the PBM earlier in the program, defining ownership boundaries, escalation paths, and data-sharing expectations before enrollment began. This would have reduced ambiguity during operational standup and made the audit process more efficient from the start.</div>
     </div>
   </div>
 </section>
 
 <!-- ============================================================ -->
-<!-- CASE STUDY 2 — edit all text between the opening and closing tags -->
+<!-- CASE STUDY 2 -->
 <!-- ============================================================ -->
 <section class="case-study" id="cs2">
-  <div class="cs-eyebrow">Case study 02 &mdash; Cost savings &amp; operational efficiency</div>
-  <h2 class="cs-title">Medication Finder: fee allocation recovery &amp; systemic process fix</h2>
+  <div class="cs-eyebrow">Case study 02 &mdash; Cost savings and operational efficiency</div>
+  <h2 class="cs-title">Medication Finder: Revenue Recovery and Systemic Process Fix</h2>
   <p class="cs-subtitle">Audit-driven root cause identification, cross-team system change, and SOP redesign across a medical product portfolio — healthcare / pharmacy benefits</p>
 
   <div class="cs-metrics">
@@ -500,10 +431,10 @@
     </div>
     <div class="cs-metric">
       <div class="cs-metric-val">33%</div>
-      <div class="cs-metric-label">Revenue increase to correct BoB</div>
+      <div class="cs-metric-label">Revenue increase to correct book of business</div>
     </div>
     <div class="cs-metric">
-      <div class="cs-metric-val">4&ndash;7</div>
+      <div class="cs-metric-val">4 to 7</div>
       <div class="cs-metric-label">Products covered by SOP framework</div>
     </div>
   </div>
@@ -511,7 +442,7 @@
   <div class="cs-tags">
     <span class="cs-tag">Operational excellence</span>
     <span class="cs-tag">Process design</span>
-    <span class="cs-tag">Audit &amp; controls</span>
+    <span class="cs-tag">Audit and controls</span>
     <span class="cs-tag">Revenue integrity</span>
     <span class="cs-tag">Cross-functional enablement</span>
   </div>
@@ -519,43 +450,43 @@
   <div class="cs-body">
     <div class="cs-section">
       <div class="cs-section-label">Context</div>
-      <div class="cs-section-text">As program manager for a portfolio of medical products, I own the SOPs and implementation toolkits that guide medical coders and the SAM team through every stage of the product lifecycle — account setup, billing, coding, renewal, and termination. These documents serve as the operational source of truth for the teams executing day to day, and I continuously improve them as gaps surface.</div>
+      <div class="cs-section-text">As program manager for a portfolio of medical products, I own the SOPs and implementation toolkits that guide medical coders and the SAM team through every stage of the product lifecycle, including account setup, billing, coding, renewal, and termination. These documents serve as the operational source of truth for the teams executing day to day, and I continuously improve them as gaps surface.</div>
     </div>
     <div class="cs-section">
       <div class="cs-section-label">Problem</div>
-      <div class="cs-section-text">During a structured audit of Medication Finder, I identified a recurring pattern of fee allocation errors at account setup. PEPM fees were not being correctly split between the medical and pharmacy books of business, causing sustained misallocation across accounts. The errors were consistent enough to indicate a systemic root cause rather than isolated mistakes, but the source was not immediately obvious.</div>
+      <div class="cs-section-text">During a structured audit of Medication Finder, I identified a recurring pattern of fee allocation errors at account setup. PEPM fees were not being correctly split between the medical and pharmacy books of business, causing sustained misallocation to the wrong book of business across the portfolio. The errors were consistent enough to indicate a systemic root cause rather than isolated mistakes, but the source was not immediately obvious.</div>
     </div>
     <div class="cs-section">
       <div class="cs-section-label">My role</div>
-      <div class="cs-section-text">I identified the gap through audit, traced the root cause across systems, drove a permanent fix with the underwriting team, led retroactive fee recovery for affected accounts, and updated the SOP and training to lock in the corrected process. I also established an ongoing audit cadence as a sustained control layer going forward.</div>
+      <div class="cs-section-text">I identified the gap through audit, traced the root cause across systems, drove a permanent fix with the underwriting team, led retroactive fee recovery for the affected book of business, and updated the SOP and training to lock in the corrected process. I also established an ongoing audit cadence as a sustained control layer going forward.</div>
     </div>
     <div class="cs-section">
       <div class="cs-section-label">Approach</div>
-      <div class="cs-section-text">Tracing the error required investigating across billing, coding, and account management workflows until I identified the true source: a separate underwriting system that allowed fees to be embedded in a way that prevented proper allocation to individual books of business. Rather than working around the system, I partnered with the underwriting team to make a permanent configuration change — removing the option to embed fees in a way that obscured the split, and ensuring products requiring separate line items would be set up correctly going forward. I then updated the SOP to reflect the corrected process, trained the SAM team directly, initiated retroactive recovery billing for all affected accounts, and implemented a structured audit cadence as an ongoing control.</div>
+      <div class="cs-section-text">Tracing the error required investigating across billing, coding, and account management workflows until I identified the true source: a separate underwriting system that allowed fees to be embedded in a way that prevented proper allocation to individual books of business. Rather than working around the system, I partnered with the underwriting team to make a permanent configuration change, removing the option to embed fees in a way that obscured the split and ensuring products requiring separate line items would be set up correctly going forward. I then updated the SOP to reflect the corrected process, trained the SAM team directly, initiated retroactive recovery billing for the affected book of business, and implemented a structured audit cadence as an ongoing control.</div>
     </div>
     <div class="cs-section">
       <div class="cs-section-label">Obstacles</div>
-      <div class="cs-section-text">The root cause was not visible at the surface level and required tracing the error across multiple systems before landing on the underwriting configuration as the source. Driving a permanent system change with a separate team also required building alignment around a fix that affected their workflows. Recovering fees retroactively across a full year of affected accounts required careful coordination to apply corrections accurately without disrupting active billing.</div>
+      <div class="cs-section-text">The root cause was not visible at the surface level and required tracing the error across multiple systems before landing on the underwriting configuration as the source. Driving a permanent system change with a separate team required building alignment around a fix that affected their workflows. Recovering fees retroactively required careful coordination to apply corrections accurately without disrupting the book of business.</div>
     </div>
     <div class="cs-section">
       <div class="cs-section-label">Outcome</div>
       <div class="cs-section-text">
-        <div class="cs-highlight"><p>Medication Finder saw a 33% increase in revenue correctly allocated to the appropriate book of business. Approximately $100K in misallocated fees were recovered for the year. The permanent underwriting system change eliminated the source of the error entirely, significantly improving revenue tracking clarity and reducing setup errors for all products requiring separate fee line items going forward.</p></div>
+        <div class="cs-highlight"><p>Medication Finder saw a 33% increase in revenue correctly allocated to the appropriate book of business. Approximately $100K in misallocated fees were recovered. The permanent underwriting system change eliminated the source of the error entirely, significantly improving revenue tracking clarity and reducing setup errors for all products requiring separate fee line items going forward.</p></div>
       </div>
     </div>
     <div class="cs-section">
       <div class="cs-section-label">Reflection</div>
-      <div class="cs-section-text">I would engage the underwriting team earlier in the product launch process to review system configuration requirements before the first accounts go live. The root cause here was upstream. Closing that gap at launch rather than post-audit would have prevented the misallocation entirely.</div>
+      <div class="cs-section-text">I would engage the underwriting team earlier in the product launch process to review system configuration requirements before the first accounts go live. The root cause was upstream, and closing that gap at launch rather than post-audit would have prevented the misallocation entirely.</div>
     </div>
   </div>
 </section>
 
 <!-- ============================================================ -->
-<!-- CASE STUDY 3 — edit all text between the opening and closing tags -->
+<!-- CASE STUDY 3 -->
 <!-- ============================================================ -->
 <section class="case-study" id="cs3">
-  <div class="cs-eyebrow">Case study 03 &mdash; User metrics &amp; strategic pivot</div>
-  <h2 class="cs-title">Medical savings product: removing friction to drive member activation</h2>
+  <div class="cs-eyebrow">Case study 03 &mdash; User metrics and strategic pivot</div>
+  <h2 class="cs-title">Medical Savings Product: Removing Friction to Drive Member Activation</h2>
   <p class="cs-subtitle">End-to-end UX strategy and multi-channel access redesign for a white-labeled member-facing savings product — healthcare / member experience</p>
 
   <div class="cs-metrics">
@@ -565,7 +496,7 @@
       <div class="cs-metric-sub">2% baseline to 3.5% post-implementation</div>
     </div>
     <div class="cs-metric">
-      <div class="cs-metric-val">1 &rarr; 4+</div>
+      <div class="cs-metric-val">1 to 4+</div>
       <div class="cs-metric-label">Member access pathways to vendor</div>
       <div class="cs-metric-sub">Single entry point expanded to multi-door</div>
     </div>
@@ -582,7 +513,7 @@
     <span class="cs-tag">Strategic pivot</span>
     <span class="cs-tag">Vendor partnership</span>
     <span class="cs-tag">Cross-functional leadership</span>
-    <span class="cs-tag">SSO &amp; access design</span>
+    <span class="cs-tag">SSO and access design</span>
   </div>
 
   <div class="cs-body">
@@ -596,11 +527,11 @@
     </div>
     <div class="cs-section">
       <div class="cs-section-label">My role</div>
-      <div class="cs-section-text">I led the end-to-end strategic pivot — from identifying the member experience breakdown, to designing the multi-door access model, to coordinating across legal, data, technology, and vendor teams to bring the solution to life. This was not a minor UX tweak; it required rethinking how members could reach and authenticate into the vendor platform entirely.</div>
+      <div class="cs-section-text">I led the end-to-end strategic pivot, from identifying the member experience breakdown to designing the multi-door access model to coordinating across legal, data, technology, and vendor teams to bring the solution to life. This was not a minor UX adjustment. It required rethinking how members could reach and authenticate into the vendor platform entirely.</div>
     </div>
     <div class="cs-section">
       <div class="cs-section-label">Approach</div>
-      <div class="cs-section-text">Rather than accepting the single-door constraint as fixed, I reframed the problem: if members could not be onboarded smoothly at the moment of first access, we needed to create earlier and alternative pathways to get them registered before friction became a barrier. Working through legal and data teams, I designed a proactive email enrollment flow that allowed members to register ahead of their first use. I also worked with the vendor and internal technology teams to implement SSO, eliminating re-authentication from any entry point. In parallel, I expanded member access from a single link to multiple touchpoints — banners, additional links, and the email pathway — creating a multi-door model that met members where they were.</div>
+      <div class="cs-section-text">Rather than accepting the single-door constraint as fixed, I reframed the problem: if members could not be onboarded smoothly at the moment of first access, we needed to create earlier and alternative pathways to get them registered before friction became a barrier. Working through legal and data teams, I designed a proactive email enrollment flow that allowed members to register ahead of their first use. I also worked with the vendor and internal technology teams to implement SSO, eliminating re-authentication from any entry point. In parallel, I expanded member access from a single link to multiple touchpoints including banners, additional links, and the email pathway, creating a multi-door model that met members where they were.</div>
     </div>
     <div class="cs-section">
       <div class="cs-section-label">Obstacles</div>
@@ -621,16 +552,16 @@
 </section>
 
 <!-- ============================================================ -->
-<!-- CASE STUDY 4 — edit all text between the opening and closing tags -->
+<!-- CASE STUDY 4 -->
 <!-- ============================================================ -->
 <section class="case-study" id="cs4">
-  <div class="cs-eyebrow">Case study 04 &mdash; Complex cross-functional program &amp; turnaround</div>
-  <h2 class="cs-title">Provider finder scheduling: MVP delivery under funding deadline</h2>
+  <div class="cs-eyebrow">Case study 04 &mdash; Cross-functional delivery with expedited timeline</div>
+  <h2 class="cs-title">Provider Finder Scheduling: MVP Delivery Under Funding Deadline</h2>
   <p class="cs-subtitle">Time-pressured program leadership from MVP through fully integrated scheduling — healthcare / member digital experience</p>
 
   <div class="cs-metrics">
     <div class="cs-metric">
-      <div class="cs-metric-val">3&ndash;6 mo</div>
+      <div class="cs-metric-val">3 to 6 mo</div>
       <div class="cs-metric-label">MVP delivered within funding window</div>
       <div class="cs-metric-sub">Corporate strategy roadmap item realized</div>
     </div>
@@ -666,11 +597,11 @@
     </div>
     <div class="cs-section">
       <div class="cs-section-label">My role</div>
-      <div class="cs-section-text">I led the full program — scoping the MVP, managing delivery across all workstreams, and leading the BAs supporting execution. I made the strategic call to phase delivery and defined what belonged in MVP versus fast follow, ensuring phase 1 would meet the funding deadline while laying the architectural foundation for the full build.</div>
+      <div class="cs-section-text">I led the full program, scoping the MVP, managing delivery across all workstreams, and leading the BAs supporting execution. I made the strategic call to phase delivery and defined what belonged in MVP versus fast follow, ensuring phase 1 would meet the funding deadline while laying the architectural foundation for the full build.</div>
     </div>
     <div class="cs-section">
       <div class="cs-section-label">Approach</div>
-      <div class="cs-section-text">I scoped the MVP around what was achievable within the constraint: partnering with a behavioral health vendor to supply clinician availability data, and building a lightweight scheduling entry point that surfaced a "schedule now" button for providers with availability in the next two weeks. Members were ported to the vendor site through a streamlined registration flow designed specifically for appointment completion. I designed the MVP framework to be vendor-agnostic from the start, so any future scheduling partner providing the right data could be onboarded without rebuilding the integration layer. That decision directly enabled phase 2.</div>
+      <div class="cs-section-text">I scoped the MVP around what was achievable within the constraint: partnering with a behavioral health vendor to supply clinician availability data and building a lightweight scheduling entry point that surfaced a "schedule now" button for providers with availability in the next two weeks. Members were ported to the vendor site through a streamlined registration flow designed specifically for appointment completion. I designed the MVP framework to be vendor-agnostic from the start, so any future scheduling partner providing the right data could be onboarded without rebuilding the integration layer. That decision directly enabled phase 2.</div>
     </div>
     <div class="cs-section">
       <div class="cs-section-label">Phases</div>
